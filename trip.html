@@ -1,0 +1,2410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>15-Day Himalayan Backpacking Expedition | Himachal Pradesh</title>
+<meta name="description" content="Epic 15-day backpacking expedition through Himachal Pradesh — Kangra Valley Toy Train, Bir Billing, Triund, Kareri Lake. ₹8,000–₹10,000 budget.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Josefin+Sans:wght@300;400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root {
+  --himalayan-blue: #1a2f4e;
+  --deep-blue: #0d1f35;
+  --sky-blue: #2d6fa4;
+  --light-sky: #5b9ec9;
+  --pine-green: #2d5016;
+  --forest-green: #3d6b24;
+  --leaf-green: #5a8c3c;
+  --snow-white: #f0f4f8;
+  --pure-white: #ffffff;
+  --sunset-orange: #e8641a;
+  --warm-amber: #f4a240;
+  --golden: #d4a017;
+  --earth-brown: #6b4226;
+  --warm-brown: #8b5e3c;
+  --sand: #c9a96e;
+  --text-dark: #1a1a2e;
+  --text-mid: #3a3a5c;
+  --text-light: #7a8ba0;
+  --glass-bg: rgba(255,255,255,0.08);
+  --glass-border: rgba(255,255,255,0.15);
+  --card-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background: var(--deep-blue);
+  color: var(--snow-white);
+  overflow-x: hidden;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--deep-blue); }
+::-webkit-scrollbar-thumb { background: var(--sunset-orange); border-radius: 3px; }
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+nav.scrolled {
+  background: rgba(13,31,53,0.95);
+  backdrop-filter: blur(20px);
+  padding: 12px 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.nav-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--warm-amber);
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.nav-logo span { color: var(--snow-white); font-weight: 400; }
+.nav-links { display: flex; gap: 30px; list-style: none; }
+.nav-links a {
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  font-size: 0.82rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+.nav-links a:hover { color: var(--warm-amber); }
+.nav-cta {
+  background: var(--sunset-orange);
+  color: white !important;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-weight: 700 !important;
+  letter-spacing: 1.5px !important;
+}
+.nav-cta:hover { background: var(--warm-amber) !important; color: var(--deep-blue) !important; }
+
+/* HERO */
+#hero {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-color: #0e2240;
+  background-image: url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=1920&q=85');
+  background-size: cover;
+  background-position: center 40%;
+  transform: scale(1.1);
+  animation: heroZoom 20s ease-in-out infinite alternate;
+}
+@keyframes heroZoom {
+  from { transform: scale(1.1) translateY(0); }
+  to { transform: scale(1.18) translateY(-20px); }
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(10,20,40,0.75) 0%,
+    rgba(13,31,53,0.6) 40%,
+    rgba(30,60,40,0.3) 70%,
+    rgba(10,20,40,0.8) 100%
+  );
+}
+
+/* Animated clouds */
+.cloud {
+  position: absolute;
+  background: rgba(255,255,255,0.07);
+  border-radius: 50px;
+  filter: blur(20px);
+}
+.cloud-1 {
+  width: 300px; height: 80px;
+  top: 20%; left: -10%;
+  animation: driftCloud 25s linear infinite;
+}
+.cloud-2 {
+  width: 200px; height: 60px;
+  top: 35%; left: -5%;
+  animation: driftCloud 35s linear infinite 8s;
+}
+.cloud-3 {
+  width: 400px; height: 100px;
+  top: 15%; left: -15%;
+  animation: driftCloud 45s linear infinite 15s;
+}
+@keyframes driftCloud {
+  from { transform: translateX(-10%); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  to { transform: translateX(120vw); opacity: 0; }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 900px;
+  padding: 0 20px;
+}
+.hero-badge {
+  display: inline-block;
+  background: rgba(232,100,26,0.25);
+  border: 1px solid var(--sunset-orange);
+  color: var(--warm-amber);
+  font-size: 0.72rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  border-radius: 2px;
+  margin-bottom: 24px;
+  backdrop-filter: blur(10px);
+  animation: fadeInDown 1s ease 0.3s both;
+}
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.8rem, 7vw, 6rem);
+  font-weight: 900;
+  line-height: 1.05;
+  margin-bottom: 16px;
+  animation: fadeInUp 1s ease 0.5s both;
+}
+.hero-title span { color: var(--warm-amber); font-style: italic; }
+.hero-subtitle {
+  font-family: 'Lora', serif;
+  font-size: clamp(0.95rem, 2vw, 1.2rem);
+  color: rgba(255,255,255,0.8);
+  letter-spacing: 0.5px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  animation: fadeInUp 1s ease 0.7s both;
+}
+.hero-route {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: var(--sand);
+  text-transform: uppercase;
+  margin-bottom: 48px;
+  animation: fadeInUp 1s ease 0.9s both;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+  animation: fadeInUp 1s ease 1s both;
+}
+.stat-item {
+  padding: 18px 28px;
+  border-right: 1px solid rgba(255,255,255,0.15);
+  text-align: center;
+}
+.stat-item:last-child { border-right: none; }
+.stat-num {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--warm-amber);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.stat-label {
+  font-size: 0.68rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+}
+
+.hero-btns {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 1s ease 1.1s both;
+}
+.btn-primary {
+  background: var(--sunset-orange);
+  color: white;
+  padding: 16px 36px;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 30px rgba(232,100,26,0.4);
+}
+.btn-primary:hover {
+  background: var(--warm-amber);
+  color: var(--deep-blue);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(244,162,64,0.5);
+}
+.btn-secondary {
+  background: transparent;
+  color: white;
+  padding: 16px 36px;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 4px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.12);
+  border-color: var(--warm-amber);
+  color: var(--warm-amber);
+  transform: translateY(-3px);
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  animation: bounce 2s ease-in-out infinite;
+  cursor: pointer;
+  text-align: center;
+}
+.scroll-indicator span {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 8px;
+}
+.scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.5), transparent);
+  margin: 0 auto;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* SECTION SHARED */
+section { position: relative; overflow: hidden; }
+.section-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.section-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--sunset-orange);
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--snow-white);
+  margin-bottom: 16px;
+}
+.section-title em { color: var(--warm-amber); font-style: italic; }
+.section-desc {
+  font-family: 'Lora', serif;
+  color: var(--text-light);
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+.divider {
+  width: 60px;
+  height: 2px;
+  background: var(--sunset-orange);
+  margin: 20px auto 0;
+}
+
+/* ROUTE SECTION */
+#route {
+  background: linear-gradient(180deg, #0a1520 0%, #0d1f35 50%, #0a1520 100%);
+  padding: 120px 40px;
+}
+.route-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.route-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.route-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, var(--sky-blue) 10%, var(--sky-blue) 90%, transparent);
+  transform: translateX(-50%);
+}
+
+.route-stop {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  padding: 24px 0;
+  cursor: pointer;
+}
+.route-stop:nth-child(odd) { flex-direction: row; }
+.route-stop:nth-child(even) { flex-direction: row-reverse; }
+
+.route-stop-card {
+  flex: 1;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  padding: 24px 28px;
+  transition: all 0.3s ease;
+  max-width: 380px;
+}
+.route-stop:nth-child(odd) .route-stop-card { text-align: right; }
+.route-stop:nth-child(even) .route-stop-card { text-align: left; }
+.route-stop-card:hover {
+  background: rgba(255,255,255,0.12);
+  transform: scale(1.02);
+  border-color: var(--warm-amber);
+}
+.stop-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--snow-white);
+  margin-bottom: 6px;
+}
+.stop-transport {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--warm-amber);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.stop-desc {
+  font-family: 'Lora', serif;
+  font-size: 0.88rem;
+  color: var(--text-light);
+  line-height: 1.7;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+.route-stop.expanded .stop-desc {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+.route-dot {
+  width: 50px;
+  height: 50px;
+  background: var(--himalayan-blue);
+  border: 3px solid var(--sky-blue);
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  z-index: 1;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.route-stop:hover .route-dot, .route-stop.expanded .route-dot {
+  background: var(--sunset-orange);
+  border-color: var(--warm-amber);
+  transform: scale(1.15);
+}
+.route-spacer { flex: 1; }
+
+/* HIGHLIGHTS */
+#highlights {
+  background: linear-gradient(160deg, #0a1520, #0d1f35 40%, #081518);
+  padding: 120px 40px;
+}
+.highlights-grid {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.highlight-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  aspect-ratio: 3/4;
+}
+.highlight-card:nth-child(1),
+.highlight-card:nth-child(5) { grid-column: span 2; aspect-ratio: 16/9; }
+
+.highlight-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.highlight-card:hover .highlight-img { transform: scale(1.08); }
+
+.highlight-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(5,15,30,0.92) 0%, rgba(5,15,30,0.3) 50%, transparent 100%);
+  transition: opacity 0.3s;
+}
+.highlight-card:hover .highlight-overlay { opacity: 0.85; }
+
+.highlight-content {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 24px;
+  transform: translateY(10px);
+  transition: transform 0.3s ease;
+}
+.highlight-card:hover .highlight-content { transform: translateY(0); }
+
+.highlight-tag {
+  display: inline-block;
+  background: var(--sunset-orange);
+  color: white;
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.highlight-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+.highlight-desc {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.highlight-card:hover .highlight-desc { opacity: 1; max-height: 80px; }
+
+/* TIMELINE */
+#itinerary {
+  background: #070f1a;
+  padding: 120px 40px;
+}
+.timeline-container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+.timeline-line {
+  position: absolute;
+  left: 80px;
+  top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, var(--sky-blue) 5%, var(--sky-blue) 95%, transparent);
+}
+.timeline-day {
+  display: flex;
+  gap: 40px;
+  padding: 20px 0;
+  position: relative;
+  align-items: flex-start;
+}
+.day-number-wrap {
+  width: 80px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 0;
+  position: relative;
+  padding-top: 8px;
+}
+.day-label {
+  font-size: 0.62rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+.day-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--sunset-orange);
+  line-height: 1;
+}
+.day-dot {
+  position: absolute;
+  right: -9px;
+  top: 14px;
+  width: 16px; height: 16px;
+  background: var(--sky-blue);
+  border: 3px solid #070f1a;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.timeline-day:hover .day-dot {
+  background: var(--sunset-orange);
+  transform: scale(1.3);
+}
+.day-card {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  margin-bottom: 8px;
+}
+.day-card:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(244,162,64,0.3);
+  transform: translateX(5px);
+}
+.day-image {
+  width: 120px;
+  flex-shrink: 0;
+  object-fit: cover;
+  height: 100px;
+}
+.day-info {
+  padding: 16px 20px 16px 0;
+}
+.day-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--snow-white);
+  margin-bottom: 6px;
+}
+.day-meta {
+  font-size: 0.72rem;
+  color: var(--warm-amber);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.day-text {
+  font-family: 'Lora', serif;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+/* TREKS */
+#trekking {
+  background: linear-gradient(160deg, #081518 0%, #0a1f15 50%, #081518 100%);
+  padding: 120px 40px;
+}
+.treks-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.trek-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  overflow: hidden;
+  backdrop-filter: blur(20px);
+  transition: all 0.4s ease;
+}
+.trek-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--warm-amber);
+  box-shadow: var(--card-shadow);
+}
+.trek-img-wrap {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+.trek-img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.trek-card:hover .trek-img { transform: scale(1.08); }
+.trek-badge {
+  position: absolute;
+  top: 16px; right: 16px;
+  background: rgba(13,31,53,0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  color: var(--warm-amber);
+  font-size: 0.7rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+.trek-body { padding: 28px; }
+.trek-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--snow-white);
+  margin-bottom: 20px;
+}
+.trek-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.trek-stat-item {
+  text-align: center;
+  background: rgba(0,0,0,0.2);
+  border-radius: 10px;
+  padding: 14px 10px;
+}
+.trek-stat-val {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--warm-amber);
+  margin-bottom: 4px;
+}
+.trek-stat-key {
+  font-size: 0.65rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+.difficulty-bar {
+  height: 4px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.difficulty-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 1.5s ease 0.5s;
+}
+.diff-easy { background: #4caf50; }
+.diff-moderate { background: var(--warm-amber); }
+.diff-hard { background: #e85d5d; }
+.diff-label {
+  font-size: 0.72rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+
+/* ELEVATION bars */
+.elevation-wrap {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  height: 50px;
+  margin-top: 16px;
+}
+.elev-bar {
+  flex: 1;
+  background: linear-gradient(to top, var(--sky-blue), var(--light-sky));
+  border-radius: 2px 2px 0 0;
+  opacity: 0.5;
+  transition: height 1s ease;
+}
+.elev-bar.peak { opacity: 1; background: linear-gradient(to top, var(--sunset-orange), var(--warm-amber)); }
+
+/* BUDGET */
+#budget {
+  background: #070f1a;
+  padding: 120px 40px;
+}
+.budget-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.budget-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.budget-items { display: flex; flex-direction: column; gap: 16px; }
+.budget-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 20px 24px;
+  transition: all 0.3s ease;
+}
+.budget-item:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(244,162,64,0.3);
+  transform: translateX(5px);
+}
+.budget-icon {
+  width: 44px; height: 44px;
+  background: rgba(232,100,26,0.15);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: var(--sunset-orange);
+  flex-shrink: 0;
+}
+.budget-label {
+  flex: 1;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--snow-white);
+  text-transform: uppercase;
+}
+.budget-amount {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--warm-amber);
+}
+.budget-bar-wrap {
+  width: 100%;
+  height: 4px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 2px;
+  margin-top: 10px;
+}
+.budget-bar {
+  height: 100%;
+  background: linear-gradient(to right, var(--sunset-orange), var(--warm-amber));
+  border-radius: 2px;
+  width: 0;
+  transition: width 1.5s ease;
+}
+
+.budget-total-card {
+  background: linear-gradient(135deg, rgba(232,100,26,0.2), rgba(13,31,53,0.8));
+  border: 1px solid rgba(232,100,26,0.4);
+  border-radius: 20px;
+  padding: 48px 40px;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  position: sticky;
+  top: 100px;
+}
+.budget-total-label {
+  font-size: 0.72rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 16px;
+}
+.budget-total-amount {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--warm-amber);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.budget-range {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 32px;
+}
+.budget-note {
+  font-family: 'Lora', serif;
+  font-size: 0.88rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+.budget-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.pill {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 0.72rem;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+}
+
+/* GALLERY */
+#gallery {
+  background: #050c14;
+  padding: 120px 40px;
+}
+.gallery-masonry {
+  max-width: 1300px;
+  margin: 0 auto;
+  columns: 4;
+  column-gap: 12px;
+}
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.gallery-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+  filter: brightness(0.85);
+}
+.gallery-item:hover img {
+  transform: scale(1.05);
+  filter: brightness(1);
+}
+.gallery-item-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+}
+.gallery-item:hover .gallery-item-overlay { opacity: 1; }
+.gallery-caption {
+  font-size: 0.78rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+}
+
+/* CHECKLIST */
+#checklist {
+  background: linear-gradient(160deg, #0a1520 0%, #0d1f35 100%);
+  padding: 120px 40px;
+}
+.checklist-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.check-item {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  padding: 24px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+.check-item:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-4px);
+}
+.check-item.checked {
+  background: rgba(93,183,80,0.15);
+  border-color: rgba(93,183,80,0.4);
+}
+.check-icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  display: block;
+  transition: transform 0.3s;
+}
+.check-item:hover .check-icon { transform: scale(1.2); }
+.check-name {
+  font-size: 0.78rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--snow-white);
+  margin-bottom: 6px;
+}
+.check-sub {
+  font-size: 0.72rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+.check-tick {
+  width: 24px; height: 24px;
+  border: 2px solid rgba(255,255,255,0.2);
+  border-radius: 50%;
+  margin: 12px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: transparent;
+  transition: all 0.3s;
+}
+.check-item.checked .check-tick {
+  background: #5db750;
+  border-color: #5db750;
+  color: white;
+}
+.checklist-progress {
+  text-align: center;
+  margin-top: 32px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: var(--warm-amber);
+}
+
+/* CTA */
+#cta {
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.cta-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1920&q=85');
+  background-size: cover;
+  background-position: center;
+}
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(13,31,53,0.85), rgba(30,15,5,0.75));
+}
+.cta-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 0 20px;
+  max-width: 700px;
+}
+.cta-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+  color: white;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.cta-title em { color: var(--warm-amber); font-style: italic; }
+.cta-text {
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+/* FOOTER */
+footer {
+  background: #030a12;
+  padding: 60px 40px 30px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+.footer-brand-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--warm-amber);
+  margin-bottom: 14px;
+}
+.footer-tagline {
+  font-family: 'Lora', serif;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.footer-social { display: flex; gap: 12px; }
+.social-btn {
+  width: 38px; height: 38px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.5);
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.social-btn:hover { background: var(--sunset-orange); border-color: var(--sunset-orange); color: white; }
+.footer-col-title {
+  font-size: 0.72rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--warm-amber);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-links a {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-links a:hover { color: var(--snow-white); }
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.footer-copy {
+  font-size: 0.78rem;
+  color: var(--text-light);
+}
+
+/* ANIMATIONS ON SCROLL */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal-left.visible { opacity: 1; transform: translateX(0); }
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal-right.visible { opacity: 1; transform: translateX(0); }
+
+/* LIGHTBOX */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,0.95);
+  align-items: center;
+  justify-content: center;
+}
+.lightbox.active { display: flex; }
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 8px;
+  object-fit: contain;
+}
+.lightbox-close {
+  position: absolute;
+  top: 24px; right: 32px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  line-height: 1;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.lightbox-close:hover { opacity: 1; }
+
+/* MOBILE MENU TOGGLE */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 4px;
+  color: white;
+  font-size: 1.1rem;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .highlights-grid { grid-template-columns: repeat(3, 1fr); }
+  .highlight-card:nth-child(1) { grid-column: span 2; }
+  .highlight-card:nth-child(5) { grid-column: span 1; aspect-ratio: 3/4; }
+  .gallery-masonry { columns: 3; }
+}
+@media (max-width: 900px) {
+  nav { padding: 16px 24px; }
+  .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: rgba(13,31,53,0.97); padding: 20px; gap: 16px; }
+  .nav-links.open { display: flex; }
+  .menu-toggle { display: block; }
+  .route-timeline::before { left: 25px; }
+  .route-stop { flex-direction: column !important; padding-left: 60px; }
+  .route-dot { position: absolute; left: 0; top: 24px; width: 42px; height: 42px; }
+  .route-spacer { display: none; }
+  .route-stop-card { max-width: 100%; text-align: left !important; }
+  .highlights-grid { grid-template-columns: 1fr 1fr; }
+  .highlight-card:nth-child(1), .highlight-card:nth-child(5) { grid-column: span 2; }
+  .treks-grid { grid-template-columns: 1fr; }
+  .budget-grid { grid-template-columns: 1fr; }
+  .budget-total-card { position: static; }
+  .gallery-masonry { columns: 2; }
+  .checklist-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  #hero, #route, #highlights, #itinerary, #trekking, #budget, #gallery, #checklist { padding: 80px 20px; }
+  .hero-stats { gap: 0; }
+  .stat-item { padding: 12px 16px; }
+  .highlights-grid { grid-template-columns: 1fr; }
+  .highlight-card:nth-child(1), .highlight-card:nth-child(5) { grid-column: span 1; }
+  .day-card { flex-direction: column; }
+  .day-image { width: 100%; height: 160px; }
+  .gallery-masonry { columns: 2; }
+  .checklist-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-inner { grid-template-columns: 1fr; gap: 30px; }
+  .timeline-line { left: 60px; }
+  .route-timeline::before { left: 20px; }
+  nav { padding: 14px 18px; }
+  .nav-logo { font-size: 1.1rem; }
+  .hero-stats { flex-wrap: wrap; }
+  .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
+}
+
+/* SMOOTH NUMBER ANIMATION */
+.count-num { display: inline-block; }
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="#" class="nav-logo">Himalayan<span>Trails</span></a>
+  <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#route">Route</a></li>
+    <li><a href="#highlights">Highlights</a></li>
+    <li><a href="#itinerary">Itinerary</a></li>
+    <li><a href="#trekking">Treks</a></li>
+    <li><a href="#budget">Budget</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#checklist" class="nav-cta">Pack Now</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="cloud cloud-1"></div>
+  <div class="cloud cloud-2"></div>
+  <div class="cloud cloud-3"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">✦ Himachal Pradesh, India ✦ Backpacker Edition 2025</div>
+    <h1 class="hero-title">
+      15-Day <em>Himalayan</em><br>Backpacking Expedition
+    </h1>
+    <p class="hero-subtitle">
+      From misty valleys to ancient temples, from paragliding skies to crystalline alpine lakes —<br>
+      the ultimate budget expedition across the soul of the Himalayas.
+    </p>
+    <p class="hero-route">
+      <i class="fas fa-map-marker-alt" style="color:var(--sunset-orange);margin-right:8px;"></i>
+      Sarsawa → Kangra Valley Toy Train → Bir Billing → Triund → Kareri Lake → Amb Andaura
+    </p>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num">15</span>
+        <span class="stat-label">Days</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">₹8–10K</span>
+        <span class="stat-label">Budget</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">3</span>
+        <span class="stat-label">Major Treks</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">1</span>
+        <span class="stat-label">Heritage Train</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">100%</span>
+        <span class="stat-label">Backpacker Friendly</span>
+      </div>
+    </div>
+
+    <div class="hero-btns">
+      <a href="#itinerary" class="btn-primary">
+        <i class="fas fa-map" style="margin-right:8px;"></i>View Itinerary
+      </a>
+      <a href="#route" class="btn-secondary">
+        <i class="fas fa-route" style="margin-right:8px;"></i>Explore Route
+      </a>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ROUTE MAP -->
+<section id="route">
+  <div class="route-container">
+    <div class="section-header reveal">
+      <p class="section-tag">✦ The Journey ✦</p>
+      <h2 class="section-title">Your <em>Complete Route</em></h2>
+      <p class="section-desc">Tap any stop to explore what awaits — every milestone a new story in the mountains.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="route-timeline">
+
+      <div class="route-stop reveal" onclick="toggleStop(this)">
+        <div class="route-stop-card">
+          <p class="stop-transport">🚉 Starting Point</p>
+          <h3 class="stop-name">Sarsawa, Saharanpur</h3>
+          <p class="stop-desc">Your journey begins in this quiet Uttar Pradesh town. Pack light, check your gear, and board the overnight train to Pathankot. The mountains are calling — and so begins the expedition.</p>
+        </div>
+        <div class="route-dot">🏠</div>
+        <div class="route-spacer"></div>
+      </div>
+
+      <div class="route-stop reveal" onclick="toggleStop(this)">
+        <div class="route-spacer"></div>
+        <div class="route-dot">🚂</div>
+        <div class="route-stop-card">
+          <p class="stop-transport">🚂 Train — Night Journey</p>
+          <h3 class="stop-name">Pathankot</h3>
+          <p class="stop-desc">Gateway to the Himalayas. Pathankot marks your first breath of mountain air. Board the legendary Kangra Valley Toy Train here — a narrow-gauge heritage ride through emerald valleys and steep river gorges.</p>
+        </div>
+      </div>
+
+      <div class="route-stop reveal" onclick="toggleStop(this)">
+        <div class="route-stop-card">
+          <p class="stop-transport">🚂 Toy Train — Heritage Ride</p>
+          <h3 class="stop-name">Baijnath Paprola</h3>
+          <p class="stop-desc">A 12th-century Shiva temple stands guard over this ancient town. The Baijnath temple is one of the finest examples of Nagara-style architecture in the Himalayas — sacred, serene, unforgettable.</p>
+        </div>
+        <div class="route-dot">🛕</div>
+        <div class="route-spacer"></div>
+      </div>
+
+      <div class="route-stop reveal" onclick="toggleStop(this)">
+        <div class="route-spacer"></div>
+        <div class="route-dot">🪂</div>
+        <div class="route-stop-card">
+          <p class="stop-transport">🚌 Bus — Short Ride</p>
+          <h3 class="stop-name">Bir Billing</h3>
+          <p class="stop-desc">The paragliding capital of India and Asia's highest landing zone. Watch pilots launch from Billing at 2400m and soar over pine forests. Camp at Bir village, explore Tibetan monasteries, and eat momos at sunset.</p>
+        </div>
+      </div>
+
+      <div class="route-stop reveal" onclick="toggleStop(this)">
+        <div class="route-stop-card">
+          <p class="stop-transport">🥾 Trek — Off the Map</p>
+          <h3 class="stop-name">Rajgunda Valley</h3>
+          <p class="stop-desc">One of Himachal's best-kept secrets — a lush meadow valley hidden above Bir at 2600m. The 12km trek takes you through dense oak and rhododendron forests, across mountain streams to an ancient shepherd settlement.</p>
+        </div>
+        <div class="route-dot">🏕</div>
+        <div class="route-spacer"></div>
+      </div>
+
+      <div class="route-stop reveal" onclick="toggleStop(this)">
+        <div class="route-spacer"></div>
+        <div class="route-dot">🍵</div>
+        <div class="route-stop-card">
+          <p class="stop-transport">🚌 Bus — Valley Road</p>
+          <h3 class="stop-name">Palampur</h3>
+          <p class="stop-desc">The tea capital of the Northwest Himalayas. Rolling emerald tea estates stretch before a wall of snow-capped Dhauladhar peaks. Wander through the gardens, taste fresh Kangra tea, and breathe deep.</p>
+        </div>
+      </div>
+
+      <div class="route-stop reveal" onclick="toggleStop(this)">
+        <div class="route-stop-card">
+          <p class="stop-transport">🚂 Toy Train → 🚌 Bus</p>
+          <h3 class="stop-name">Kangra → McLeodganj</h3>
+          <p class="stop-desc">Board the toy train one last time for the historic ride to Kangra. Then ascend to McLeodganj — Little Lhasa — where Tibetan culture, Buddhist temples, and mountain energy converge in one of India's most unique towns.</p>
+        </div>
+        <div class="route-dot">🏔</div>
+        <div class="route-spacer"></div>
+      </div>
+
+      <div class="route-stop reveal" onclick="toggleStop(this)">
+        <div class="route-spacer"></div>
+        <div class="route-dot">🥾</div>
+        <div class="route-stop-card">
+          <p class="stop-transport">🥾 Trek — Day 8</p>
+          <h3 class="stop-name">Triund Ridge</h3>
+          <p class="stop-desc">The crown jewel of Dhauladhar trekking. 9km to 2875m, where the ridge falls away on both sides and the entire Kangra Valley stretches below. Watch the sunrise paint the Dhauladhar wall pink and gold.</p>
+        </div>
+      </div>
+
+      <div class="route-stop reveal" onclick="toggleStop(this)">
+        <div class="route-stop-card">
+          <p class="stop-transport">🥾 Multi-Day Trek</p>
+          <h3 class="stop-name">Kareri Village & Lake</h3>
+          <p class="stop-desc">The grand finale. Trek from Kareri Village through pine forests and moraines to reach Kareri Lake at 2934m — an alpine jewel with crystal-clear water reflecting the surrounding peaks. Camp under stars so bright they feel within reach.</p>
+        </div>
+        <div class="route-dot">💧</div>
+        <div class="route-spacer"></div>
+      </div>
+
+      <div class="route-stop reveal" onclick="toggleStop(this)">
+        <div class="route-spacer"></div>
+        <div class="route-dot">🏁</div>
+        <div class="route-stop-card">
+          <p class="stop-transport">🚌 Bus → 🚂 Train</p>
+          <h3 class="stop-name">Amb Andaura → Sarsawa</h3>
+          <p class="stop-desc">The gentle descent. Catch a bus to Amb Andaura railway station and board the train home. 15 days, 3 treks, 1 heritage train, countless memories — your Himalayan story is written.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section id="highlights">
+  <div class="section-header reveal">
+    <p class="section-tag">✦ Unmissable Experiences ✦</p>
+    <h2 class="section-title">Journey <em>Highlights</em></h2>
+    <p class="section-desc">Eight iconic stops, each a world unto itself — hover to discover what makes each one legendary.</p>
+    <div class="divider"></div>
+  </div>
+
+  <div class="highlights-grid">
+
+    <div class="highlight-card reveal">
+      <img src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=900&q=80" alt="Kangra Valley Toy Train" onerror="this.onerror=null;this.src='https://picsum.photos/seed/train/900/500'" class="highlight-img">
+      <div class="highlight-overlay"></div>
+      <div class="highlight-content">
+        <span class="highlight-tag">Heritage Railway</span>
+        <div class="highlight-name">Kangra Valley Toy Train</div>
+        <div class="highlight-desc">A 164km narrow-gauge journey built in 1929, crossing 993 bridges and 2 tunnels through some of the most dramatic mountain scenery on earth.</div>
+      </div>
+    </div>
+
+    <div class="highlight-card reveal" style="transition-delay:0.1s">
+      <img src="https://images.unsplash.com/photo-1627894483216-2138af692e32?w=600&q=80" alt="Baijnath Temple" onerror="this.onerror=null;this.src='https://picsum.photos/seed/temple/600/800'" class="highlight-img">
+      <div class="highlight-overlay"></div>
+      <div class="highlight-content">
+        <span class="highlight-tag">Ancient Temple</span>
+        <div class="highlight-name">Baijnath Shiva Temple</div>
+        <div class="highlight-desc">Dating to 1204 CE, this Nagara-style marvel is dedicated to Lord Shiva and stands as one of the finest stone temples of the Western Himalayas.</div>
+      </div>
+    </div>
+
+    <div class="highlight-card reveal" style="transition-delay:0.15s">
+      <img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=600&q=80" alt="Paragliding Bir Billing" onerror="this.onerror=null;this.src='https://picsum.photos/seed/paraglideg/600/450'" class="highlight-img">
+      <div class="highlight-overlay"></div>
+      <div class="highlight-content">
+        <span class="highlight-tag">Adventure Sports</span>
+        <div class="highlight-name">Bir Billing</div>
+        <div class="highlight-desc">Host of the 2015 Paragliding World Cup. Launch at 2400m and soar for 30+ minutes over pine forests and tea gardens below.</div>
+      </div>
+    </div>
+
+    <div class="highlight-card reveal" style="transition-delay:0.2s">
+      <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" alt="Rajgunda Valley" onerror="this.onerror=null;this.src='https://picsum.photos/seed/valley/600/800'" class="highlight-img">
+      <div class="highlight-overlay"></div>
+      <div class="highlight-content">
+        <span class="highlight-tag">Hidden Valley</span>
+        <div class="highlight-name">Rajgunda Valley</div>
+        <div class="highlight-desc">A secret meadow above Bir at 2600m, seldom visited, eternally beautiful — wildflowers, ancient oaks and the solitude of the high Himalayas.</div>
+      </div>
+    </div>
+
+    <div class="highlight-card reveal" style="transition-delay:0.05s">
+      <img src="https://images.unsplash.com/photo-1596451190630-186aff535bf2?w=900&q=80" alt="Palampur Tea Gardens" onerror="this.onerror=null;this.src='https://picsum.photos/seed/tea/900/500'" class="highlight-img">
+      <div class="highlight-overlay"></div>
+      <div class="highlight-content">
+        <span class="highlight-tag">Tea Country</span>
+        <div class="highlight-name">Palampur Tea Gardens</div>
+        <div class="highlight-desc">India's second-largest tea growing region, where Kangra tea has been cultivated since 1849. Lush green carpets against snow-capped Dhauladhar.</div>
+      </div>
+    </div>
+
+    <div class="highlight-card reveal" style="transition-delay:0.25s">
+      <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=600&q=80" alt="McLeodganj Tibetan Culture" onerror="this.onerror=null;this.src='https://picsum.photos/seed/monastery/600/800'" class="highlight-img">
+      <div class="highlight-overlay"></div>
+      <div class="highlight-content">
+        <span class="highlight-tag">Tibetan Culture</span>
+        <div class="highlight-name">McLeodganj</div>
+        <div class="highlight-desc">Little Lhasa of India — home to the Dalai Lama, Namgyal Monastery, prayer flags, momos, and a culture that survived exile with extraordinary grace.</div>
+      </div>
+    </div>
+
+    <div class="highlight-card reveal" style="transition-delay:0.3s">
+      <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&q=80" alt="Triund Trek" onerror="this.onerror=null;this.src='https://picsum.photos/seed/triund/600/800'" class="highlight-img">
+      <div class="highlight-overlay"></div>
+      <div class="highlight-content">
+        <span class="highlight-tag">Iconic Trek</span>
+        <div class="highlight-name">Triund Ridge</div>
+        <div class="highlight-desc">Camp on the edge of the Dhauladhar wall at 2875m. Wake to sunrise over snow peaks and a 180° panorama of the Kangra Valley stretching to infinity.</div>
+      </div>
+    </div>
+
+    <div class="highlight-card reveal" style="transition-delay:0.35s">
+      <img src="https://images.unsplash.com/photo-1439853949212-36589f9adf29?w=600&q=80" alt="Kareri Lake" onerror="this.onerror=null;this.src='https://picsum.photos/seed/karerig/600/600'" class="highlight-img">
+      <div class="highlight-overlay"></div>
+      <div class="highlight-content">
+        <span class="highlight-tag">Alpine Lake</span>
+        <div class="highlight-name">Kareri Lake</div>
+        <div class="highlight-desc">A glacial lake at 2934m, fed by snowmelt from the Dhauladhar range. Its mirror-calm surface reflects peaks so clearly you can't tell where the mountains end.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ITINERARY -->
+<section id="itinerary">
+  <div class="section-header reveal">
+    <p class="section-tag">✦ Day by Day ✦</p>
+    <h2 class="section-title">The <em>Full Itinerary</em></h2>
+    <p class="section-desc">Fifteen days, each one different — from slow mornings on moving trains to cold alpine dawns.</p>
+    <div class="divider"></div>
+  </div>
+
+  <div class="timeline-container">
+    <div class="timeline-line"></div>
+
+    <div class="timeline-day reveal">
+      <div class="day-number-wrap">
+        <span class="day-label">Day</span>
+        <span class="day-num">01</span>
+        <div class="day-dot"></div>
+      </div>
+      <div class="day-card">
+        <img src="https://images.unsplash.com/photo-1527838832700-5059252407fa?w=300&q=80" alt="Overnight Train" onerror="this.onerror=null;this.src='https://picsum.photos/seed/nighttrain/300/200'" class="day-image">
+        <div class="day-info">
+          <div class="day-meta">🚂 Train Journey</div>
+          <div class="day-title">Sarsawa → Pathankot</div>
+          <p class="day-text">Board the evening express from Sarsawa. Pack snacks, grab a window seat, and watch the plains give way to silhouettes of distant hills as night falls. Arrive Pathankot by morning.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-day reveal" style="transition-delay:0.1s">
+      <div class="day-number-wrap">
+        <span class="day-label">Day</span>
+        <span class="day-num">02</span>
+        <div class="day-dot"></div>
+      </div>
+      <div class="day-card">
+        <img src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=300&q=80" alt="Toy Train" onerror="this.onerror=null;this.src='https://picsum.photos/seed/toytrain/300/200'" class="day-image">
+        <div class="day-info">
+          <div class="day-meta">🚂 Heritage Toy Train</div>
+          <div class="day-title">Toy Train → Baijnath → Bir</div>
+          <p class="day-text">Board the legendary Kangra Valley toy train at Pathankot. 164km of mountain magic — tea gardens, river gorges, hilltop stations. Alight at Baijnath for temple visit, then bus to Bir village. Check in to a hostel. Sleep to the sound of prayer bells.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-day reveal" style="transition-delay:0.1s">
+      <div class="day-number-wrap">
+        <span class="day-label">Day</span>
+        <span class="day-num">03</span>
+        <div class="day-dot"></div>
+      </div>
+      <div class="day-card">
+        <img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=300&q=80" alt="Paragliding" onerror="this.onerror=null;this.src='https://picsum.photos/seed/birair/300/200'" class="day-image">
+        <div class="day-info">
+          <div class="day-meta">🪂 Paragliding Day</div>
+          <div class="day-title">Bir Billing — Fly!</div>
+          <p class="day-text">Rise at 5AM for the hike to Billing launch site (2400m). Tandem paraglide over pine forests and tea gardens — a 30-minute flight over one of the most spectacular landscapes on earth. Afternoon: explore Tibetan monasteries in Bir. Momos for dinner.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-day reveal" style="transition-delay:0.1s">
+      <div class="day-number-wrap">
+        <span class="day-label">Day</span>
+        <span class="day-num">04</span>
+        <div class="day-dot"></div>
+      </div>
+      <div class="day-card">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=300&q=80" alt="Rajgunda Valley" onerror="this.onerror=null;this.src='https://picsum.photos/seed/meadow/300/200'" class="day-image">
+        <div class="day-info">
+          <div class="day-meta">🥾 12km Trek • 2600m</div>
+          <div class="day-title">Rajgunda Valley Trek</div>
+          <p class="day-text">Early morning ascent through dense rhododendron and oak forest to Rajgunda, the "secret meadow" of Bir. Camp overnight beside an ancient shepherd hut with unobstructed views of snow peaks. Stargazing at altitude — unforgettable.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-day reveal">
+      <div class="day-number-wrap">
+        <span class="day-label">Day</span>
+        <span class="day-num">05</span>
+        <div class="day-dot"></div>
+      </div>
+      <div class="day-card">
+        <img src="https://images.unsplash.com/photo-1596451190630-186aff535bf2?w=300&q=80" alt="Tea Gardens Palampur" onerror="this.onerror=null;this.src='https://picsum.photos/seed/teagarden/300/200'" class="day-image">
+        <div class="day-info">
+          <div class="day-meta">🍵 Slow Travel Day</div>
+          <div class="day-title">Palampur — Tea Country</div>
+          <p class="day-text">Descend from Rajgunda, catch a bus to Palampur. Walk through endless tea estates in the afternoon light, Dhauladhar peaks towering above. Taste fresh Kangra green tea at a local garden. Rest, recharge.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-day reveal">
+      <div class="day-number-wrap">
+        <span class="day-label">Day</span>
+        <span class="day-num">06</span>
+        <div class="day-dot"></div>
+      </div>
+      <div class="day-card">
+        <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=300&q=80" alt="McLeodganj" onerror="this.onerror=null;this.src='https://picsum.photos/seed/dharamshala/300/200'" class="day-image">
+        <div class="day-info">
+          <div class="day-meta">🚂 Toy Train → 🚌 Bus</div>
+          <div class="day-title">Toy Train → Kangra → McLeodganj</div>
+          <p class="day-text">One final toy train ride from Palampur toward Kangra Fort — walk the ancient battlements above the Banganga River. Then ascend by bus to McLeodganj, the Tibetan exile capital. Evening: Namgyal Monastery, Bhagsu waterfall, and a bowl of thukpa.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-day reveal">
+      <div class="day-number-wrap">
+        <span class="day-label">Day</span>
+        <span class="day-num">07</span>
+        <div class="day-dot"></div>
+      </div>
+      <div class="day-card">
+        <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=300&q=80" alt="McLeodganj Exploration" onerror="this.onerror=null;this.src='https://picsum.photos/seed/tibet/300/200'" class="day-image">
+        <div class="day-info">
+          <div class="day-meta">🛕 Exploration Day</div>
+          <div class="day-title">McLeodganj Exploration</div>
+          <p class="day-text">Full day in Little Lhasa. Morning: Tsuglagkhang Complex (Dalai Lama's temple). Midday: Tibet Museum, Tibetan market, and momo breakfast at a rooftop café. Evening: dal chawal at Nick's, prayer flags at sunset, and live music at a local café.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-day reveal">
+      <div class="day-number-wrap">
+        <span class="day-label">Day</span>
+        <span class="day-num">08</span>
+        <div class="day-dot"></div>
+      </div>
+      <div class="day-card">
+        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=300&q=80" alt="Triund Trek" onerror="this.onerror=null;this.src='https://picsum.photos/seed/trekpath/300/200'" class="day-image">
+        <div class="day-info">
+          <div class="day-meta">🥾 9km Trek • 2875m</div>
+          <div class="day-title">Triund Trek — Summit!</div>
+          <p class="day-text">Start at 6AM from McLeodganj. 9km through rhododendron forest and open ridgeline to Triund top (2875m). Camp on the ridge — rock faces of the Dhauladhar wall tower above, the Kangra Valley glows 1500m below. Campfire, chai, clear skies.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-day reveal">
+      <div class="day-number-wrap">
+        <span class="day-label">Day</span>
+        <span class="day-num">09</span>
+        <div class="day-dot"></div>
+      </div>
+      <div class="day-card">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&q=80" alt="Sunrise Mountains" onerror="this.onerror=null;this.src='https://picsum.photos/seed/sunrise/300/200'" class="day-image">
+        <div class="day-info">
+          <div class="day-meta">🌄 Sunrise & Return</div>
+          <div class="day-title">Triund Sunrise → Rest Day</div>
+          <p class="day-text">Wake at 4:30AM for golden sunrise over the Dhauladhar range — one of the greatest views in India. Descend to McLeodganj by noon. Rest, massage, good food, hot shower. Your legs have earned it.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-day reveal">
+      <div class="day-number-wrap">
+        <span class="day-label">Day</span>
+        <span class="day-num">10</span>
+        <div class="day-dot"></div>
+      </div>
+      <div class="day-card">
+        <img src="https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=300&q=80" alt="Kareri Village" onerror="this.onerror=null;this.src='https://picsum.photos/seed/himachalivillage/300/200'" class="day-image">
+        <div class="day-info">
+          <div class="day-meta">🚌 Bus → Village</div>
+          <div class="day-title">Journey to Kareri Village</div>
+          <p class="day-text">Bus from Dharamshala to Kareri village (20km). Meet the local families, stay at a basic homestay, help cook dinner. This is where the tourist trail ends — real Himalayan village life begins here.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-day reveal">
+      <div class="day-number-wrap">
+        <span class="day-label">Day</span>
+        <span class="day-num">11</span>
+        <div class="day-dot"></div>
+      </div>
+      <div class="day-card">
+        <img src="https://images.unsplash.com/photo-1439853949212-36589f9adf29?w=300&q=80" alt="Kareri Lake" onerror="this.onerror=null;this.src='https://picsum.photos/seed/glaciallake/300/200'" class="day-image">
+        <div class="day-info">
+          <div class="day-meta">🥾 13km Trek • 2934m</div>
+          <div class="day-title">Kareri Lake Trek</div>
+          <p class="day-text">The greatest day of the expedition. 13km ascent from Kareri village through forests, moraines, and snowfields to reach the glacial Kareri Lake at 2934m. Camp beside glassy water reflecting Dhauladhar peaks. No phones, no noise, only mountains.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-day reveal">
+      <div class="day-number-wrap">
+        <span class="day-label">Day</span>
+        <span class="day-num">12</span>
+        <div class="day-dot"></div>
+      </div>
+      <div class="day-card">
+        <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=300&q=80" alt="Return Trek" onerror="this.onerror=null;this.src='https://picsum.photos/seed/descent/300/200'" class="day-image">
+        <div class="day-info">
+          <div class="day-meta">🥾 Return Journey</div>
+          <div class="day-title">Lake to Village — Return Trek</div>
+          <p class="day-text">Wake early, breathe the alpine air one last time. Photograph the dawn reflections on the lake. Descend 13km back to Kareri village, stopping at a dhaba for rajma chawal — the best meal of your life after 2 days on the mountain.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-day reveal">
+      <div class="day-number-wrap">
+        <span class="day-label">Day</span>
+        <span class="day-num">13</span>
+        <div class="day-dot"></div>
+      </div>
+      <div class="day-card">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=300&q=80" alt="Mountain Village" onerror="this.onerror=null;this.src='https://picsum.photos/seed/villagerest/300/200'" class="day-image">
+        <div class="day-info">
+          <div class="day-meta">🏡 Rest & Reflect</div>
+          <div class="day-title">Kareri Village — Recovery Day</div>
+          <p class="day-text">Stay another night in the village. Rest sore muscles. Sit in the sun, chat with the village kids, write in your journal. Watch the Dhauladhar peaks glow pink at dusk. These are the moments that stay with you forever.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-day reveal">
+      <div class="day-number-wrap">
+        <span class="day-label">Day</span>
+        <span class="day-num">14</span>
+        <div class="day-dot"></div>
+      </div>
+      <div class="day-card">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=300&q=80" alt="Valley Road" onerror="this.onerror=null;this.src='https://picsum.photos/seed/roadhp/300/200'" class="day-image">
+        <div class="day-info">
+          <div class="day-meta">🌿 Slow Travel</div>
+          <div class="day-title">Kareri → Amb Andaura</div>
+          <p class="day-text">Return to Dharamshala, then take a local bus down through the Kangra Valley to Amb Andaura — a gentle descent through the foothills. Final mountain dinner, pack your bags, look back at the Dhauladhars one last time.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-day reveal">
+      <div class="day-number-wrap">
+        <span class="day-label">Day</span>
+        <span class="day-num">15</span>
+        <div class="day-dot"></div>
+      </div>
+      <div class="day-card">
+        <img src="https://images.unsplash.com/photo-1488085061387-422e29b40080?w=300&q=80" alt="Journey Home" onerror="this.onerror=null;this.src='https://picsum.photos/seed/trainwindow/300/200'" class="day-image">
+        <div class="day-info">
+          <div class="day-meta">🏠 Journey Complete</div>
+          <div class="day-title">Amb Andaura → Sarsawa — Home</div>
+          <p class="day-text">Board the morning train from Amb Andaura station. Watch the Himalayas grow smaller in the window. You left with a backpack and an open map. You return with stories that will last a lifetime. The mountains will be waiting.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TREKKING -->
+<section id="trekking">
+  <div class="section-header reveal">
+    <p class="section-tag">✦ On the Trail ✦</p>
+    <h2 class="section-title">Three <em>Major Treks</em></h2>
+    <p class="section-desc">From moderate valley walks to challenging alpine ascents — know what's ahead before you set foot on the path.</p>
+    <div class="divider"></div>
+  </div>
+
+  <div class="treks-grid">
+
+    <div class="trek-card reveal">
+      <div class="trek-img-wrap">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=700&q=80" alt="Rajgunda Trek" onerror="this.onerror=null;this.src='https://picsum.photos/seed/rajgunda/700/400'" class="trek-img">
+        <span class="trek-badge">Moderate</span>
+      </div>
+      <div class="trek-body">
+        <h3 class="trek-name">Rajgunda Valley Trek</h3>
+        <div class="trek-stats-grid">
+          <div class="trek-stat-item">
+            <span class="trek-stat-val">12 km</span>
+            <span class="trek-stat-key">Distance</span>
+          </div>
+          <div class="trek-stat-item">
+            <span class="trek-stat-val">2600 m</span>
+            <span class="trek-stat-key">Altitude</span>
+          </div>
+          <div class="trek-stat-item">
+            <span class="trek-stat-val">6–7 hr</span>
+            <span class="trek-stat-key">Duration</span>
+          </div>
+        </div>
+        <p class="diff-label" style="margin-bottom:6px;font-size:0.72rem;letter-spacing:1px;text-transform:uppercase;color:var(--text-light);">Difficulty: Moderate</p>
+        <div class="difficulty-bar"><div class="difficulty-fill diff-moderate" data-width="55%" style="width:0%"></div></div>
+        <div class="elevation-wrap" id="elev1">
+          <div class="elev-bar" style="height:30%"></div>
+          <div class="elev-bar" style="height:45%"></div>
+          <div class="elev-bar" style="height:55%"></div>
+          <div class="elev-bar" style="height:65%"></div>
+          <div class="elev-bar peak" style="height:80%"></div>
+          <div class="elev-bar" style="height:75%"></div>
+          <div class="elev-bar" style="height:70%"></div>
+          <div class="elev-bar" style="height:80%"></div>
+          <div class="elev-bar peak" style="height:90%"></div>
+          <div class="elev-bar" style="height:85%"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="trek-card reveal" style="transition-delay:0.15s">
+      <div class="trek-img-wrap">
+        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=700&q=80" alt="Triund Trek" onerror="this.onerror=null;this.src='https://picsum.photos/seed/triundtop/700/400'" class="trek-img">
+        <span class="trek-badge">Easy–Moderate</span>
+      </div>
+      <div class="trek-body">
+        <h3 class="trek-name">Triund Ridge Trek</h3>
+        <div class="trek-stats-grid">
+          <div class="trek-stat-item">
+            <span class="trek-stat-val">9 km</span>
+            <span class="trek-stat-key">Distance</span>
+          </div>
+          <div class="trek-stat-item">
+            <span class="trek-stat-val">2875 m</span>
+            <span class="trek-stat-key">Altitude</span>
+          </div>
+          <div class="trek-stat-item">
+            <span class="trek-stat-val">4–5 hr</span>
+            <span class="trek-stat-key">Duration</span>
+          </div>
+        </div>
+        <p class="diff-label" style="margin-bottom:6px;font-size:0.72rem;letter-spacing:1px;text-transform:uppercase;color:var(--text-light);">Difficulty: Easy–Moderate</p>
+        <div class="difficulty-bar"><div class="difficulty-fill diff-easy" data-width="40%" style="width:0%"></div></div>
+        <div class="elevation-wrap">
+          <div class="elev-bar" style="height:25%"></div>
+          <div class="elev-bar" style="height:40%"></div>
+          <div class="elev-bar" style="height:50%"></div>
+          <div class="elev-bar" style="height:60%"></div>
+          <div class="elev-bar" style="height:70%"></div>
+          <div class="elev-bar" style="height:78%"></div>
+          <div class="elev-bar" style="height:84%"></div>
+          <div class="elev-bar peak" style="height:95%"></div>
+          <div class="elev-bar peak" style="height:100%"></div>
+          <div class="elev-bar peak" style="height:95%"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="trek-card reveal" style="transition-delay:0.3s">
+      <div class="trek-img-wrap">
+        <img src="https://images.unsplash.com/photo-1439853949212-36589f9adf29?w=700&q=80" alt="Kareri Lake Trek" onerror="this.onerror=null;this.src='https://picsum.photos/seed/kareritrek/700/400'" class="trek-img">
+        <span class="trek-badge" style="background:rgba(232,100,26,0.9);border-color:var(--sunset-orange);">Moderate–Hard</span>
+      </div>
+      <div class="trek-body">
+        <h3 class="trek-name">Kareri Lake Trek</h3>
+        <div class="trek-stats-grid">
+          <div class="trek-stat-item">
+            <span class="trek-stat-val">13 km</span>
+            <span class="trek-stat-key">Distance</span>
+          </div>
+          <div class="trek-stat-item">
+            <span class="trek-stat-val">2934 m</span>
+            <span class="trek-stat-key">Altitude</span>
+          </div>
+          <div class="trek-stat-item">
+            <span class="trek-stat-val">7–8 hr</span>
+            <span class="trek-stat-key">Duration</span>
+          </div>
+        </div>
+        <p class="diff-label" style="margin-bottom:6px;font-size:0.72rem;letter-spacing:1px;text-transform:uppercase;color:var(--text-light);">Difficulty: Moderate–Hard</p>
+        <div class="difficulty-bar"><div class="difficulty-fill diff-hard" data-width="75%" style="width:0%"></div></div>
+        <div class="elevation-wrap">
+          <div class="elev-bar" style="height:20%"></div>
+          <div class="elev-bar" style="height:35%"></div>
+          <div class="elev-bar" style="height:50%"></div>
+          <div class="elev-bar" style="height:60%"></div>
+          <div class="elev-bar" style="height:68%"></div>
+          <div class="elev-bar" style="height:75%"></div>
+          <div class="elev-bar" style="height:82%"></div>
+          <div class="elev-bar" style="height:88%"></div>
+          <div class="elev-bar peak" style="height:96%"></div>
+          <div class="elev-bar peak" style="height:100%"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BUDGET -->
+<section id="budget">
+  <div class="section-header reveal">
+    <p class="section-tag">✦ Budget Planning ✦</p>
+    <h2 class="section-title">The <em>Real Numbers</em></h2>
+    <p class="section-desc">Completely transparent budget breakdown for 15 days — no hidden costs, no surprises.</p>
+    <div class="divider"></div>
+  </div>
+
+  <div class="budget-container">
+    <div class="budget-grid">
+      <div class="budget-items">
+
+        <div class="budget-item reveal">
+          <div class="budget-icon"><i class="fas fa-train"></i></div>
+          <div style="flex:1">
+            <div class="budget-label">Train Travel</div>
+            <div class="budget-bar-wrap"><div class="budget-bar" data-width="55%"></div></div>
+          </div>
+          <div class="budget-amount">₹1,200–1,800</div>
+        </div>
+
+        <div class="budget-item reveal" style="transition-delay:0.08s">
+          <div class="budget-icon"><i class="fas fa-train" style="font-size:0.9rem;"></i></div>
+          <div style="flex:1">
+            <div class="budget-label">Toy Train (Heritage)</div>
+            <div class="budget-bar-wrap"><div class="budget-bar" data-width="12%"></div></div>
+          </div>
+          <div class="budget-amount">₹100–300</div>
+        </div>
+
+        <div class="budget-item reveal" style="transition-delay:0.12s">
+          <div class="budget-icon"><i class="fas fa-bus"></i></div>
+          <div style="flex:1">
+            <div class="budget-label">Local Buses (HRTC)</div>
+            <div class="budget-bar-wrap"><div class="budget-bar" data-width="35%"></div></div>
+          </div>
+          <div class="budget-amount">₹800–1,200</div>
+        </div>
+
+        <div class="budget-item reveal" style="transition-delay:0.16s">
+          <div class="budget-icon"><i class="fas fa-bed"></i></div>
+          <div style="flex:1">
+            <div class="budget-label">Hostels & Homestays</div>
+            <div class="budget-bar-wrap"><div class="budget-bar" data-width="70%"></div></div>
+          </div>
+          <div class="budget-amount">₹3,500–4,500</div>
+        </div>
+
+        <div class="budget-item reveal" style="transition-delay:0.2s">
+          <div class="budget-icon"><i class="fas fa-utensils"></i></div>
+          <div style="flex:1">
+            <div class="budget-label">Food & Chai</div>
+            <div class="budget-bar-wrap"><div class="budget-bar" data-width="45%"></div></div>
+          </div>
+          <div class="budget-amount">₹2,000–2,500</div>
+        </div>
+
+        <div class="budget-item reveal" style="transition-delay:0.24s">
+          <div class="budget-icon"><i class="fas fa-shield-alt"></i></div>
+          <div style="flex:1">
+            <div class="budget-label">Buffer / Emergencies</div>
+            <div class="budget-bar-wrap"><div class="budget-bar" data-width="20%"></div></div>
+          </div>
+          <div class="budget-amount">₹1,000</div>
+        </div>
+
+      </div>
+
+      <div class="budget-total-card reveal">
+        <p class="budget-total-label">Total Estimated Budget</p>
+        <div class="budget-total-amount">₹9,250</div>
+        <div class="budget-range">Range: ₹8,600 – ₹9,900</div>
+        <p class="budget-note">
+          15 days across Himachal Pradesh, 3 major treks, one heritage train journey, dozens of unforgettable meals, countless cups of chai — all for under ₹10,000.
+        </p>
+        <div class="budget-pills">
+          <div class="pill">Paragliding ₹1,500–2,500</div>
+          <div class="pill">Temple donations: Optional</div>
+          <div class="pill">Camping fees: ₹150–300/night</div>
+          <div class="pill">Photography extras: Yours</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="section-header reveal">
+    <p class="section-tag">✦ Through the Lens ✦</p>
+    <h2 class="section-title">Visual <em>Journal</em></h2>
+    <p class="section-desc">Every frame from the mountains — real places, real light, real Himachal Pradesh.</p>
+    <div class="divider"></div>
+  </div>
+
+  <div class="gallery-masonry">
+
+    <div class="gallery-item reveal" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=600&q=80" alt="Himalayan Panorama" onerror="this.onerror=null;this.src='https://picsum.photos/seed/himpano/600/800'" loading="lazy">
+      <div class="gallery-item-overlay"><span class="gallery-caption">Himalayan Peaks</span></div>
+    </div>
+
+    <div class="gallery-item reveal" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=600&q=80" alt="Kangra Toy Train" onerror="this.onerror=null;this.src='https://picsum.photos/seed/kangratrain/600/400'" loading="lazy">
+      <div class="gallery-item-overlay"><span class="gallery-caption">Kangra Toy Train</span></div>
+    </div>
+
+    <div class="gallery-item reveal" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1596451190630-186aff535bf2?w=600&q=80" alt="Tea Gardens Palampur" onerror="this.onerror=null;this.src='https://picsum.photos/seed/teasgarden/600/500'" loading="lazy">
+      <div class="gallery-item-overlay"><span class="gallery-caption">Palampur Tea Gardens</span></div>
+    </div>
+
+    <div class="gallery-item reveal" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&q=80" alt="Triund Trekking" onerror="this.onerror=null;this.src='https://picsum.photos/seed/triundg/600/700'" loading="lazy">
+      <div class="gallery-item-overlay"><span class="gallery-caption">Triund Ridge</span></div>
+    </div>
+
+    <div class="gallery-item reveal" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=600&q=80" alt="Kareri Lake" loading="lazy">
+      <div class="gallery-item-overlay"><span class="gallery-caption">Kareri Lake</span></div>
+    </div>
+
+    <div class="gallery-item reveal" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=600&q=80" alt="Paragliding Bir Billing" loading="lazy">
+      <div class="gallery-item-overlay"><span class="gallery-caption">Paragliding at Bir Billing</span></div>
+    </div>
+
+    <div class="gallery-item reveal" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=600&q=80" alt="Tibetan Monastery" onerror="this.onerror=null;this.src='https://picsum.photos/seed/buddhistg/600/700'" loading="lazy">
+      <div class="gallery-item-overlay"><span class="gallery-caption">Tibetan Monastery</span></div>
+    </div>
+
+    <div class="gallery-item reveal" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" alt="Mountain Meadow" onerror="this.onerror=null;this.src='https://picsum.photos/seed/meadowg/600/500'" loading="lazy">
+      <div class="gallery-item-overlay"><span class="gallery-caption">Rajgunda Meadows</span></div>
+    </div>
+
+    <div class="gallery-item reveal" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&q=80" alt="Himalayan Camping" onerror="this.onerror=null;this.src='https://picsum.photos/seed/campg/600/600'" loading="lazy">
+      <div class="gallery-item-overlay"><span class="gallery-caption">High Altitude Camp</span></div>
+    </div>
+
+    <div class="gallery-item reveal" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Golden Sunrise" onerror="this.onerror=null;this.src='https://picsum.photos/seed/sunriseg/600/400'" loading="lazy">
+      <div class="gallery-item-overlay"><span class="gallery-caption">Himalayan Sunrise</span></div>
+    </div>
+
+    <div class="gallery-item reveal" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1627894483216-2138af692e32?w=600&q=80" alt="Ancient Temple" onerror="this.onerror=null;this.src='https://picsum.photos/seed/templeg/600/700'" loading="lazy">
+      <div class="gallery-item-overlay"><span class="gallery-caption">Baijnath Temple</span></div>
+    </div>
+
+    <div class="gallery-item reveal" onclick="openLightbox(this)">
+      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&q=80" alt="Valley Road" onerror="this.onerror=null;this.src='https://picsum.photos/seed/valleyg/600/500'" loading="lazy">
+      <div class="gallery-item-overlay"><span class="gallery-caption">Dhauladhar Valley</span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CHECKLIST -->
+<section id="checklist">
+  <div class="section-header reveal">
+    <p class="section-tag">✦ Pack Smart ✦</p>
+    <h2 class="section-title">The Essential <em>Checklist</em></h2>
+    <p class="section-desc">Click each item to check it off — pack smart, travel light, go far.</p>
+    <div class="divider"></div>
+  </div>
+
+  <div class="checklist-container">
+    <div class="checklist-grid" id="checklistGrid">
+
+      <div class="check-item" onclick="toggleCheck(this)">
+        <span class="check-icon">🎒</span>
+        <div class="check-name">Backpack</div>
+        <div class="check-sub">40–50L, waterproof cover</div>
+        <div class="check-tick"><i class="fas fa-check"></i></div>
+      </div>
+
+      <div class="check-item" onclick="toggleCheck(this)">
+        <span class="check-icon">🥾</span>
+        <div class="check-name">Trekking Shoes</div>
+        <div class="check-sub">Waterproof ankle support</div>
+        <div class="check-tick"><i class="fas fa-check"></i></div>
+      </div>
+
+      <div class="check-item" onclick="toggleCheck(this)">
+        <span class="check-icon">🧥</span>
+        <div class="check-name">Rain Jacket</div>
+        <div class="check-sub">Lightweight, packable</div>
+        <div class="check-tick"><i class="fas fa-check"></i></div>
+      </div>
+
+      <div class="check-item" onclick="toggleCheck(this)">
+        <span class="check-icon">🔋</span>
+        <div class="check-name">Power Bank</div>
+        <div class="check-sub">20,000mAh minimum</div>
+        <div class="check-tick"><i class="fas fa-check"></i></div>
+      </div>
+
+      <div class="check-item" onclick="toggleCheck(this)">
+        <span class="check-icon">🔦</span>
+        <div class="check-name">Headlamp</div>
+        <div class="check-sub">LED, spare batteries</div>
+        <div class="check-tick"><i class="fas fa-check"></i></div>
+      </div>
+
+      <div class="check-item" onclick="toggleCheck(this)">
+        <span class="check-icon">💊</span>
+        <div class="check-name">Medicines</div>
+        <div class="check-sub">First aid + altitude meds</div>
+        <div class="check-tick"><i class="fas fa-check"></i></div>
+      </div>
+
+      <div class="check-item" onclick="toggleCheck(this)">
+        <span class="check-icon">🧶</span>
+        <div class="check-name">Warm Layers</div>
+        <div class="check-sub">Fleece + thermal base</div>
+        <div class="check-tick"><i class="fas fa-check"></i></div>
+      </div>
+
+      <div class="check-item" onclick="toggleCheck(this)">
+        <span class="check-icon">💧</span>
+        <div class="check-name">Water Bottle</div>
+        <div class="check-sub">1L steel + purification tabs</div>
+        <div class="check-tick"><i class="fas fa-check"></i></div>
+      </div>
+
+      <div class="check-item" onclick="toggleCheck(this)">
+        <span class="check-icon">🗺️</span>
+        <div class="check-name">Offline Maps</div>
+        <div class="check-sub">Maps.me downloaded</div>
+        <div class="check-tick"><i class="fas fa-check"></i></div>
+      </div>
+
+      <div class="check-item" onclick="toggleCheck(this)">
+        <span class="check-icon">🏕</span>
+        <div class="check-name">Sleeping Bag</div>
+        <div class="check-sub">Rated -5°C minimum</div>
+        <div class="check-tick"><i class="fas fa-check"></i></div>
+      </div>
+
+      <div class="check-item" onclick="toggleCheck(this)">
+        <span class="check-icon">🕶</span>
+        <div class="check-name">Sunglasses</div>
+        <div class="check-sub">UV400 protection</div>
+        <div class="check-tick"><i class="fas fa-check"></i></div>
+      </div>
+
+      <div class="check-item" onclick="toggleCheck(this)">
+        <span class="check-icon">📷</span>
+        <div class="check-name">Camera</div>
+        <div class="check-sub">+ extra memory cards</div>
+        <div class="check-tick"><i class="fas fa-check"></i></div>
+      </div>
+
+    </div>
+    <div class="checklist-progress" id="checklistProgress" style="margin-top:30px;"></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="cta-bg"></div>
+  <div class="cta-overlay"></div>
+  <div class="cta-content">
+    <h2 class="cta-title">Your <em>Himalayan</em><br>Adventure Awaits</h2>
+    <p class="cta-text">
+      The mountains don't wait for the perfect moment. They only wait for you to say yes — 
+      pack your bag, book your train, and let the Himalayas do the rest.
+    </p>
+    <a href="#itinerary" class="btn-primary" style="font-size:0.88rem; padding:18px 44px;">
+      <i class="fas fa-mountain" style="margin-right:10px;"></i>Start Planning Your Trip
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name">HimalayanTrails</div>
+      <p class="footer-tagline">
+        15 days. ₹10,000. One lifetime of memories. 
+        The Dhauladhar range awaits every backpacker who dares to look north and say — 
+        <em>"This time, I'll go."</em>
+      </p>
+      <div class="footer-social">
+        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-reddit"></i></a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="#route">Route Map</a></li>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#itinerary">Itinerary</a></li>
+        <li><a href="#trekking">Trekking Info</a></li>
+        <li><a href="#budget">Budget</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#checklist">Packing List</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Resources</div>
+      <ul class="footer-links">
+        <li><a href="#">HRTC Bus Schedules</a></li>
+        <li><a href="#">Kangra Toy Train Timings</a></li>
+        <li><a href="#">Triund Permit Info</a></li>
+        <li><a href="#">Kareri Lake Weather</a></li>
+        <li><a href="#">Bir Billing Paragliding</a></li>
+        <li><a href="#">Backpacker Community</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2025 HimalayanTrails. Crafted with ❤ for Indian backpackers. Pahar bulate hain.</p>
+    <p class="footer-copy" style="color:var(--sunset-orange);">पहाड़ बुलाते हैं 🏔</p>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close" onclick="closeLightbox()">✕</span>
+  <img src="" alt="" class="lightbox-img" id="lightboxImg">
+</div>
+
+<script>
+// NAV scroll effect
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// Mobile menu
+document.getElementById('menuToggle').addEventListener('click', () => {
+  document.getElementById('navLinks').classList.toggle('open');
+});
+
+// Close menu on link click
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+});
+
+// Scroll reveal
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+
+      // Animate budget bars
+      entry.target.querySelectorAll('.budget-bar[data-width]').forEach(bar => {
+        setTimeout(() => bar.style.width = bar.dataset.width, 200);
+      });
+      // Animate difficulty bars
+      entry.target.querySelectorAll('.difficulty-fill[data-width]').forEach(bar => {
+        setTimeout(() => bar.style.width = bar.dataset.width, 300);
+      });
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => revealObserver.observe(el));
+
+// Route stop toggle
+function toggleStop(el) {
+  const wasExpanded = el.classList.contains('expanded');
+  document.querySelectorAll('.route-stop').forEach(s => s.classList.remove('expanded'));
+  if (!wasExpanded) el.classList.add('expanded');
+}
+
+// Checklist
+function toggleCheck(el) {
+  el.classList.toggle('checked');
+  updateProgress();
+}
+function updateProgress() {
+  const items = document.querySelectorAll('.check-item');
+  const checked = document.querySelectorAll('.check-item.checked').length;
+  const total = items.length;
+  const el = document.getElementById('checklistProgress');
+  if (checked === 0) { el.textContent = ''; return; }
+  if (checked === total) {
+    el.textContent = `✓ All ${total} items packed — you're ready to roll! पहाड़ बुलाते हैं! 🏔`;
+    el.style.color = '#5db750';
+  } else {
+    el.textContent = `${checked} of ${total} items checked`;
+    el.style.color = 'var(--warm-amber)';
+  }
+}
+
+// Gallery lightbox
+function openLightbox(el) {
+  const img = el.querySelector('img');
+  document.getElementById('lightboxImg').src = img.src.replace('w=600', 'w=1200');
+  document.getElementById('lightboxImg').alt = img.alt;
+  document.getElementById('lightbox').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+// Parallax on hero
+window.addEventListener('scroll', () => {
+  const scrolled = window.scrollY;
+  const heroBg = document.querySelector('.hero-bg');
+  if (heroBg && scrolled < window.innerHeight) {
+    heroBg.style.transform = `scale(1.1) translateY(${scrolled * 0.3}px)`;
+  }
+});
+
+// Staggered reveal delays
+document.querySelectorAll('.timeline-day').forEach((el, i) => {
+  el.style.transitionDelay = `${i * 0.05}s`;
+});
+
+// ── GLOBAL IMAGE FALLBACK SYSTEM ────────────────────────────────────────────
+// Picsum fallbacks keyed by alt text keywords — guaranteed to load
+const fallbackMap = [
+  { keys: ['toy train','kangra train','train','railway'],       seed: 'mountain-train',   w: 900, h: 500 },
+  { keys: ['temple','baijnath','shiva'],                        seed: 'india-temple',     w: 600, h: 800 },
+  { keys: ['paraglid','bir billing','fly'],                     seed: 'paragliding',      w: 600, h: 800 },
+  { keys: ['rajgunda','meadow','valley'],                       seed: 'mountain-meadow',  w: 600, h: 800 },
+  { keys: ['tea garden','palampur','tea'],                      seed: 'tea-garden',       w: 900, h: 500 },
+  { keys: ['mcleodganj','tibetan','monastery','buddhist'],      seed: 'tibet-temple',     w: 600, h: 800 },
+  { keys: ['triund','ridge','trek','trekking'],                 seed: 'himalaya-trek',    w: 600, h: 800 },
+  { keys: ['kareri','lake','alpine'],                           seed: 'alpine-lake',      w: 600, h: 800 },
+  { keys: ['himalay','mountain','panorama','dhauladhar'],       seed: 'himalayas',        w: 900, h: 600 },
+  { keys: ['camp','camping'],                                   seed: 'mountain-camp',    w: 600, h: 600 },
+  { keys: ['sunrise','sunset','golden'],                        seed: 'mountain-sunrise', w: 600, h: 400 },
+  { keys: ['village','home','recovery'],                        seed: 'himalaya-village', w: 300, h: 200 },
+  { keys: ['overnight','night','journey'],                      seed: 'night-train',      w: 300, h: 200 },
+];
+
+function getFallbackUrl(altText, naturalW, naturalH) {
+  const alt = (altText || '').toLowerCase();
+  for (const entry of fallbackMap) {
+    if (entry.keys.some(k => alt.includes(k))) {
+      return `https://picsum.photos/seed/${entry.seed}/${entry.w}/${entry.h}`;
+    }
+  }
+  // Generic mountain fallback
+  return `https://picsum.photos/seed/himalaya/${naturalW||600}/${naturalH||400}`;
+}
+
+// Attach onerror to every img that doesn't already have one
+document.querySelectorAll('img').forEach(img => {
+  if (!img.getAttribute('onerror')) {
+    img.addEventListener('error', function() {
+      if (this.dataset.fallbackTried) return;
+      this.dataset.fallbackTried = '1';
+      this.src = getFallbackUrl(this.alt, this.naturalWidth || 600, this.naturalHeight || 400);
+    });
+  }
+  // Also handle already-broken images (cached error state)
+  if (img.complete && img.naturalWidth === 0 && img.src && !img.dataset.fallbackTried) {
+    img.dataset.fallbackTried = '1';
+    img.src = getFallbackUrl(img.alt, 600, 400);
+  }
+});
+</script>
+
+</body>
+</html>
